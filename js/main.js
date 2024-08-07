@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //close other open FAQ bodies
         const otherGroups = faqContainer.querySelectorAll('.faq-group');
-        console.log(otherGroups);
+        
 
-        otherGroups.forEach( (otherGroups) => {
-            if(otherGroups !== group)  {
-                const otherGroups = otherGroup.querySelector('.faq-group-body');
+        otherGroups.forEach( (otherGroup) => {
+            if(otherGroup !== group)  {
+                const otherGroupBody = otherGroup.querySelector('.faq-group-body');
                 const otherIcon = otherIcon.querySelector('.faq-group-header i');
 
                 otherGroupBody.classList.remove('open');
