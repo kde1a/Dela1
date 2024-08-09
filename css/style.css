@@ -407,7 +407,7 @@ footer ul li {
     transition: right 0.3s ease-in-out;
 }
 
-.mobile-menu:active {
+.mobile-menu.active {
     right: 0;
 }
 

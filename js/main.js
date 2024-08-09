@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     faqContainer.addEventListener('click', (e) => {
         const groupHeader = e.target.closest('.faq-group-header');
         
-        if(!groupHeader) return;
+        if (!groupHeader) return;
 
         const group = groupHeader.parentElement;
         const groupBody = group.querySelector('.faq-group-body');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         groupBody.classList.toggle('open');
 
         //close other open FAQ bodies
-        const otherGroup = faqContainer.querySelectorAll('.faq-group');
+        const otherGroups = faqContainer.querySelectorAll('.faq-group');
         
 
         otherGroups.forEach( (otherGroup) => {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerButton = document.querySelector('.hamburger-button');
-    const mobileMenu = document.querySelector('.mobile.menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
     hamburgerButton.addEventListener('click', () =>
         mobileMenu.classList.toggle('active')
